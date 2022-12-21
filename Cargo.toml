@@ -1,0 +1,35 @@
+[package]
+name = "sce_aligner"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+thiserror = "1.0"
+bio = "*"
+rand = "0.8.3"
+fxhash = "*"
+clap = "3"
+debruijn = "*"
+partitions = "*"
+num-traits = "*"
+needletail = "*"
+simple-logging= "*"
+log = "*"
+rayon = "*"
+nohash-hasher = "*"
+smallvec = { version = "*", features = ["union","serde","write"] }
+serde = "*"
+bincode = "*"
+intervallum = "*"
+rust-lapper = "*"
+gcollections = "*"
+statrs = "*"
+libwfa = "0.1"
+
+[profile.dev]
+#opt-level = 1
+opt-level = 3
+

@@ -1,0 +1,7 @@
+/target
+*.fastq
+*.fq
+*.gz
+*.fa
+*.sketch
+*.sam
